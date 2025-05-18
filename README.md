@@ -1,41 +1,84 @@
-# PRODIGY_DS_Task3
+# 🚢 Titanic Survivors Analysis: An Exploratory Data Study
 
-## Introduction
-This repository contains the third task of the Prodigy Data Science Internship. The task focuses on analyzing the Titanic dataset using data preprocessing, visualization, and exploratory data analysis (EDA) techniques.
+## 📌 Project Overview
+This project presents an exploratory analysis of the Titanic dataset as part of the Prodigy Data Science Internship. It focuses on uncovering survival patterns based on passenger demographics, ticket class, and other onboard attributes through data preprocessing, visualization, and statistical interpretation.
 
-## Titanic Dataset Analysis
+---
 
-### About the Dataset
-The dataset contains information about Titanic passengers, including demographic details, ticket class, fare, and survival status. The key columns in the dataset are:
-- **PassengerId**: Unique identifier for each passenger
-- **Survived**: Survival status (0 = No, 1 = Yes)
-- **Pclass**: Ticket class (1st, 2nd, or 3rd)
-- **Name**: Passenger name
-- **Sex**: Gender of the passenger
-- **Age**: Age of the passenger (some missing values filled with mean age)
-- **SibSp**: Number of siblings/spouses aboard
-- **Parch**: Number of parents/children aboard
-- **Fare**: Ticket fare
-- **Embarked**: Port of embarkation
+## 🧠 Objective
+- Clean and prepare the Titanic dataset for analysis.
+- Explore relationships between passenger features and survival rates.
+- Derive insights using visualizations and correlation metrics.
 
-## Task Overview
-The following steps were performed as part of the analysis:
+---
 
-### Data Cleaning
-- Dropped the 'Cabin' column due to many missing values.
-- Filled missing 'Age' values with the mean age.
-- Filled missing 'Embarked' values with the mode (most frequent value).
+## 📂 Dataset Summary
+The dataset includes comprehensive information about passengers aboard the RMS Titanic, including:
+- `PassengerId`: Unique ID for each passenger.
+- `Survived`: Binary indicator of survival (0 = No, 1 = Yes).
+- `Pclass`: Ticket class (1st, 2nd, or 3rd).
+- `Name`, `Sex`, `Age`: Personal information.
+- `SibSp`, `Parch`: Family aboard indicators.
+- `Fare`: Ticket cost.
+- `Embarked`: Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).
 
-### Exploratory Data Analysis (EDA)
-- Visualized survival counts and trends based on gender, ticket class, and age groups.
-- Created histograms and bar charts to understand survival distributions.
-- Used a heatmap to analyze correlations between numerical variables.
+---
 
-## Knowledge Gained
-- The survival rate was higher for females compared to males.
-- Passengers from higher ticket classes had a better survival rate.
-- Age played a crucial role, with infants and young children having higher survival rates.
-- The correlation heatmap helped in identifying relationships between numerical variables.
+## 🛠️ Tools & Technologies Used
+- **Python**  
+- **Pandas** – for data wrangling  
+- **NumPy** – for numerical processing  
+- **Matplotlib & Seaborn** – for data visualization  
+- **Jupyter Notebook** – for interactive development  
 
-## Conclusion
-This analysis provided valuable insights into how different factors influenced survival rates on the Titanic. The project reinforced the importance of data preprocessing and visualization in extracting meaningful patterns from real-world datasets.
+---
+
+## 🔍 Key Steps in the Analysis
+
+### ✅ Data Cleaning
+- Removed the `Cabin` column due to excessive missing values.
+- Filled missing `Age` values with the mean age.
+- Imputed missing `Embarked` values with the mode.
+
+### 📊 Exploratory Data Analysis (EDA)
+- Bar plots for gender-wise and class-wise survival analysis.
+- Age distribution visualization with histograms.
+- Correlation heatmap to study feature relationships.
+
+---
+
+## 📈 Key Insights
+- **Gender Bias in Survival**: Females had significantly higher survival rates.
+- **Class Advantage**: Passengers in 1st class were more likely to survive than those in 2nd or 3rd.
+- **Age Factor**: Younger children had higher chances of survival, indicating possible prioritization.
+- **Fare Correlation**: Higher fares correlated with better survival odds.
+
+---
+
+## 🎯 Conclusion
+This analysis of the Titanic dataset demonstrates how structured preprocessing and insightful visualizations can uncover meaningful trends in real-world data. The project reinforces the value of EDA in interpreting complex datasets and supports evidence-based conclusions about historical events.
+
+---
+
+## 📁 Project Structure
+├── Titanic_EDA.ipynb # Jupyter Notebook containing the full analysis
+├── titanic.csv # Dataset file
+├── visuals/ # Charts and heatmaps generated
+└── README.md # Project documentation
+
+---
+
+## 👤 Author
+**K. Avinash**  
+B.Tech - Artificial Intelligence & Data Science  
+Vasireddy Venkatadri Institute of Technology  
+
+---
+
+## 📬 Contact
+- 📧 Email: avinashkaja280@gmail.com  
+- 💼 LinkedIn: [Avinash Kaja](https://www.linkedin.com/in/avinash-kaja)  
+
+---
+
+⭐ *If you found this project insightful, feel free to star it or reach out for collaboration!*
